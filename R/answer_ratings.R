@@ -7,7 +7,7 @@
 #'
 
 
-answer_ratings <- function(data, name = "", export = TRUE) {
+answer_rating <- function(data, name = "", export = TRUE) {
   
   data_runner <- data[]
   data_eval <- vector()
