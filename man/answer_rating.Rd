@@ -4,7 +4,7 @@
 \usage{
 answer_rating(
   data, 
-  name = "",
+  name,
   export = TRUE)
 }
 \description{
