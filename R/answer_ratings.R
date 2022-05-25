@@ -14,7 +14,7 @@ answer_rating <- function(data, name = "", export = TRUE) {
   
   for (i in 1:length(data_runner)) {
     
-    print(paste("Participant ", i))
+    print(paste("Answer ", i))
     print(data_runner[i])
     data_eval[i] <- readline(prompt="Rating: ")
     
