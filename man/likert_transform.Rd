@@ -2,7 +2,7 @@
 \alias{likert_transform}
 \title{Transferring Likert Scale Answers to Numbers}
 \usage{
-answer_rating(
+likert_transform(
   data, 
   name,
   lang,
