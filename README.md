@@ -1,6 +1,6 @@
 # behavdata
 
-# Introduction
+## Introduction
 
 The **`behavdata`** package allows easy pre-processing of behavioral data. This package includes the following functions:
 
@@ -10,7 +10,7 @@ The **`behavdata`** package allows easy pre-processing of behavioral data. This 
 
 More functions will be added over time.
 
-# Installation
+## Installation
 
 ``` r
 library(devtools)
@@ -18,7 +18,7 @@ devtools::install_github("samueltobler/behavdata", force = TRUE)
 library(behavdata)
 ```
 
-# Citation
+## Citation
 
 To cite the package **`behavdata`** in publications, please use:
 
