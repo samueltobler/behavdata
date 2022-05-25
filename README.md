@@ -24,4 +24,4 @@ library(behavdata)
 
 To cite the package **`behavdata`** in publications, please use:
 
-Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing (Version 0.1.0) [Computer software]. https://github.com/samueltobler/behavdata.
+Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing (Version 0.1.0) [Computer software]. https://github.com/samueltobler/behavdata
