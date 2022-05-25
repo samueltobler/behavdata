@@ -1,12 +1,11 @@
 # behavdata
 
-------------------------------------------------------------------------
-
 # Introduction
 
 The **`behavdata`** package allows easy pre-processing of behavioral data. This package includes the following functions:
 
--   **answer_rating**: for facilitated and unbiased rating of student answers on qualitative or open ended questions
+-   **`answer_rating`**: for facilitated and unbiased rating of student answers on qualitative or open ended questions
+-   **`answer_rating`**: for fastly transform text inputs like from Likert scale answers into numerical values
 
 More functions will be added over time.
 
