@@ -19,6 +19,6 @@ library(behavdata)
 
 # Citation
 
-To cite the package **`behavdata`** in publications use:
+To cite the package **`behavdata`** in publications, please use:
 
 Tobler, S. (2022). Package "behavdata". Availabe at <https://github.com/samueltobler/behavdata>
