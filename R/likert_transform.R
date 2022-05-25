@@ -6,12 +6,7 @@
 #' @examples
 #'
 
-setwd("/Users/toblersa/Desktop/TextAnalysis/")
-
-datx <- read.csv("Text_Analysis.csv", header = FALSE, sep = ";")
-
-
-likert_transform <- function(data, name = "", export = TRUE, lang = "de") {
+likert_transform <- function(data, name = "", lang = "de", other = c("NA"), export = TRUE) {
   
   require(sjmisc)
   
@@ -39,11 +34,27 @@ likert_transform <- function(data, name = "", export = TRUE, lang = "de") {
         
         if (is_empty(data[i,j]) == TRUE) {data[i,j] = "NA"}
         
-        if (data[i,j] == "strongly disagree") {data[i,j] = 1} 
-        if (data[i,j] == "disagree") {data[i,j] = 2} 
-        if (data[i,j] == "neutral") {data[i,j] = 3} 
-        if (data[i,j] == "agree") {data[i,j] = 4} 
-        if (data[i,j] == "strongly") {data[i,j] = 5} 
+        if (data[i,j] == "Strongly disagree") {data[i,j] = 1} 
+        if (data[i,j] == "Disagree") {data[i,j] = 2} 
+        if (data[i,j] == "Neither agree nor disagree") {data[i,j] = 3} 
+        if (data[i,j] == "Agree") {data[i,j] = 4} 
+        if (data[i,j] == "Strongly") {data[i,j] = 5} 
+      }
+    }
+    
+  }
+
+  
+  if (other[1] != "NA") {
+    
+    for (l in 1:length(other)) { 
+    for (i in 1:dim(data)[1]) {
+      for (j in 1:dim(data)[2]) {
+        
+        if (is_empty(data[i,j]) == TRUE) {data[i,j] = "NA"}
+    
+        if (data[i,j] == other[l]) {data[i,j] = l} 
+        }
       }
     }
     
@@ -60,6 +71,5 @@ likert_transform <- function(data, name = "", export = TRUE, lang = "de") {
     
   } else {
   }
-  
   
 }
