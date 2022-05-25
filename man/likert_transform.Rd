@@ -15,7 +15,7 @@ This function allows to directly transform any collected data in Likert Scale fo
 \arguments{
 \item{data}{a data frame with individual participants in rows and different measures in columns.}
 \item{name}{name of the analysis to specify the output file.}
-\item{lang}{language of the Likert scale in case either the standard 5 point Likert scales are used}
+\item{lang}{language of the Likert scale in case either the standard 5 point Likert scales are used.}
 \item{export}{TRUE if a CSV file with the modified data should be exported, FALSE if not.}
 }
 \examples{
