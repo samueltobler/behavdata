@@ -7,17 +7,24 @@
 #'
 
 
-answer_rating <- function(data, name = "", export = TRUE) {
+answer_rating <- function(data, name = "", skip = FALSE, export = TRUE) {
   
   data_runner <- data[]
   data_eval <- vector()
   
   for (i in 1:length(data_runner)) {
-    
-    print(paste("Answer ", i))
-    print(data_runner[i])
-    data_eval[i] <- readline(prompt="Rating: ")
-    
+    if (skip == TRUE) {
+      
+      if(is.na(data_runner[i]) == TRUE) {data_eval[i] = "NA"} else {
+        print(paste("Answer ", i))
+        print(data_runner[i])
+        data_eval[i] <- readline(prompt="Rating: ")
+      }
+    } else {
+      print(paste("Answer ", i))
+      print(data_runner[i])
+      data_eval[i] <- readline(prompt="Rating: ")
+    }
   }
   
   
