@@ -10,6 +10,7 @@ The **`behavdata`** package allows easy pre-processing of behavioral data. This 
 -   `answer_rating`: for facilitated and unbiased rating of student answers on qualitative or open ended questions
 -   `likert_transform`: for fastly transform text inputs like from Likert scale answers into numerical values
 -   `likert_switch`: to invert numerical values Likert scales
+-   `AlphaCI_Bounds`: to determine the confidence interval for Cronbach's Alpha values
 
 More functions will be added over time.
 
