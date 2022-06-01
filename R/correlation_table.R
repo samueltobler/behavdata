@@ -1,4 +1,4 @@
-#' Transforming Likert Scale Answers in numerical operators
+#' Correlation Table
 #'
 #' @param
 #' @keywords Correlation; Table; Transformation
