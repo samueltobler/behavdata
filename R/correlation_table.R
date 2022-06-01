@@ -22,6 +22,9 @@ correlation_table <- function(data, name = "") {
     )
   } # Function by sthda.com
   
+  if(dir.exists(file.path("Tables")) == TRUE) {} else {dir.create("Tables")}
+  
+  
   resh <- rcorr(as.matrix(data))
   cortable.h <- flattenCorrMatrix(round(resh$r,2), round(resh$P,4))
   knitr::kable(cortable.h)
