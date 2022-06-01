@@ -3,8 +3,6 @@ Type: Package
 Title: Behavioral Data Preprocessing
 Version: 0.1.0
 Author: Samuel Tobler
-    person("Samuel", "Tobler", , "contact@samueltobler.ch", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-0661-6055"))
 Description: An R package for eased behavioral data preprocessing
 License: `use_mit_license()`
 Encoding: UTF-8

@@ -11,6 +11,7 @@ The **`behavdata`** package allows easy pre-processing of behavioral data. This 
 -   `likert_transform`: for fastly transform text inputs like from Likert scale answers into numerical values
 -   `likert_switch`: to invert numerical values Likert scales
 -   `AlphaCI_Bounds`: to determine the confidence interval for Cronbach's Alpha values
+-   `correlation_table`: to calculate all pairwise correlations of a big data set and directly obtain a CSV table
 
 More functions will be added over time.
 
