@@ -7,7 +7,7 @@
 #'
 
 
-correlation_table <- function(data, name = "", lang = "de", other = c("NA"), export = TRUE) {
+correlation_table <- function(data, name = "") {
   
   require(Hmisc)
   require(knitr)
