@@ -12,6 +12,7 @@ The **`behavdata`** package allows easy pre-processing of behavioral data. This 
 -   `likert_switch`: to invert numerical values Likert scales
 -   `AlphaCI_Bounds`: to determine the confidence interval for Cronbach's Alpha values
 -   `correlation_table`: to calculate all pairwise correlations of a big data set and directly obtain a CSV table
+-   `finding_d`: to determine the lowest Cohen's d value with which two group means are statistically equivalent
 
 More functions will be added over time.
 
