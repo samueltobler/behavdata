@@ -17,9 +17,9 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     pval[i] <- xx$TOST_p1
     dval[i] <- d
     
-    print(xx$TOST_p1)
-    print(xx$TOST_p2)
-    print(d)
+   # print(xx$TOST_p1)
+   # print(xx$TOST_p2)
+   # print(d)
     # print(pval[i])
     
     
