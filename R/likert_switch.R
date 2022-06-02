@@ -28,4 +28,6 @@ likert_switch <- function(data, name = "", n = 5, qoi = c(1), export = TRUE) {
   } else {
   }
   
+  output <- list("dat" = data)
+  
 }
