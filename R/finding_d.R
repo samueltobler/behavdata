@@ -10,10 +10,10 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     
     d = steps*i
     #  print(d)
-    capture.output(
+    invisible(capture.output(
       xx <- TOSTtwo(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2, plot = FALSE,
-                    low_eqbound_d = -d, high_eqbound_d = d, alpha = alpha, var.equal = var.equal)
-    )
+                    low_eqbound_d = -d, high_eqbound_d = d, alpha = alpha, var.equal = var.equal, verbose = FALSE)
+    ))
     pval[i] <- xx$TOST_p1
     dval[i] <- d
     
@@ -43,6 +43,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
   
   outputlist <- list("df" = xx$TOST_df, "t" = round(xx$TOST_t1, 2),
                      "p" = round(xx$TOST_p1, 4), d = dval[i])
-  return(outputlist) 
+  #return(outputlist) 
   
 }
+
