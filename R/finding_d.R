@@ -1,5 +1,21 @@
-finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE, 
-                         steps = 0.01, dmax = 1) {
+finding_d2 <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE, 
+                       steps = 0.01, dmax = 1) {
+  
+  
+  quietx <- function(..., messages = FALSE, cat = FALSE) 
+  {
+    if (!cat) {
+      sink(tempfile())
+      on.exit(sink())
+    }
+    out <- if (messages) 
+      eval(...)
+    else suppressMessages(eval(...))
+    out
+  } # QUIETX Function adapted from Chalmers, R. P., & Adkins, M. C. (2020). 
+  # Writing Effective and Reliable Monte Carlo Simulations with the SimDesign 
+  # Package. The Quantitative Methods for Psychology, 16(4), 248-280. 
+  # doi: 10.20982/tqmp.16.4.p248
   
   factor <- dmax/steps
   
@@ -11,15 +27,16 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     d = steps*i
     #  print(d)
     invisible(capture.output(
-      xx <- TOSTtwo(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2, plot = FALSE,
-                    low_eqbound_d = -d, high_eqbound_d = d, alpha = alpha, var.equal = var.equal, verbose = FALSE)
+      xx <- quietx(tsum_TOST(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2, r12 = 1, 
+                             low_eqbound = -d, high_eqbound = d, alpha = alpha, var.equal = var.equal, 
+                             mu = 0, bias_correction = FALSE, eqbound_type = "SMD"))
     ))
-    pval[i] <- xx$TOST_p1
+    pval[i] <- xx$TOST$p[2]
     dval[i] <- d
     
-   # print(xx$TOST_p1)
-   # print(xx$TOST_p2)
-   # print(d)
+    # print(xx$TOST_p1)
+    # print(xx$TOST_p2)
+    # print(d)
     # print(pval[i])
     
     
@@ -27,7 +44,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
       ibreak  = i
       
       d <- dval[ibreak]; p <- round(pval[ibreak],4); 
-      df <- round(xx$TOST_df,2); t <- round(xx$TOST_t1, 2)
+      df <- round(xx$TOST$df[2],2); t <- round(xx$TOST$t[2], 2)
       
       print(paste("The results from the equivalence test indicate that the observed effect is statistically equivalent to zero at a Cohen's value of d = ",
                   dval[i], ". (t(", df, ") = ", t, ", p = ", p, ")", sep = ""))
@@ -37,12 +54,12 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     
   }
   
-  if (i == 100) {print(paste("The results from the equivalence test indicate that the observed effect is statistically not equivalent to zero with a Cohen's value of d = ",
-                             dval[i], ".", sep = "")) 
+  if (i == factor) {print(paste("The results from the equivalence test indicate that the observed effect is statistically not equivalent to zero with a Cohen's value of d = ",
+                                dval[i], ".", sep = "")) 
   }
   
-  outputlist <- list("df" = xx$TOST_df, "t" = round(xx$TOST_t1, 2),
-                     "p" = round(xx$TOST_p1, 4), d = dval[i])
+  outputlist <- list("df" = round(xx$TOST$df[2],2), "t" = round(xx$TOST$t[2], 2),
+                     "p" = round(xx$TOST$p[2], 4), d = dval[i])
   #return(outputlist) 
   
 }
