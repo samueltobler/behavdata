@@ -11,10 +11,10 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     d = steps*i
     #  print(d)
     invisible(capture.output(
-      xx <- tsum_TOST(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2,
-                    low_eqbound = -d, high_eqbound = d, alpha = alpha, var.equal = var.equal)
+      xx <- TOSTtwo(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2, plot = FALSE,
+                    low_eqbound_d = -d, high_eqbound_d = d, alpha = alpha, var.equal = var.equal, verbose = FALSE)
     ))
-    pval[i] <- xx$TOST$p[2]
+    pval[i] <- xx$TOST_p1
     dval[i] <- d
     
    # print(xx$TOST_p1)
@@ -27,7 +27,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
       ibreak  = i
       
       d <- dval[ibreak]; p <- round(pval[ibreak],4); 
-      df <- round(xx$TOST$df[2],2); t <- round(xx$TOST$t[2], 2)
+      df <- round(xx$TOST_df,2); t <- round(xx$TOST_t1, 2)
       
       print(paste("The results from the equivalence test indicate that the observed effect is statistically equivalent to zero at a Cohen's value of d = ",
                   dval[i], ". (t(", df, ") = ", t, ", p = ", p, ")", sep = ""))
@@ -41,8 +41,8 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
                              dval[i], ".", sep = "")) 
   }
   
-  outputlist <- list("df" = round(xx$TOST$df[2],2), "t" = round(xx$TOST$t[2], 2),
-                     "p" = round(xx$TOST$p[2], 4), d = dval[i])
+  outputlist <- list("df" = xx$TOST_df, "t" = round(xx$TOST_t1, 2),
+                     "p" = round(xx$TOST_p1, 4), d = dval[i])
   #return(outputlist) 
   
 }
