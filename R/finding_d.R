@@ -12,7 +12,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     #  print(d)
     invisible(capture.output(
       xx <- tsum_TOST(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2,
-                    low_eqbound = -d, high_eqbound = d, alpha = alpha, var.equal = var.equal, verbose = FALSE)
+                    low_eqbound = -d, high_eqbound = d, alpha = alpha, var.equal = var.equal)
     ))
     pval[i] <- xx$TOST$p[2]
     dval[i] <- d
