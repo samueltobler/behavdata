@@ -1,7 +1,7 @@
 # behavdata
 
 [![DOI](https://zenodo.org/badge/495925772.svg)](https://zenodo.org/badge/latestdoi/495925772)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 ## Introduction
 

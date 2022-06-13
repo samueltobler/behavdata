@@ -4,7 +4,8 @@ Title: Behavioral Data Preprocessing
 Version: 0.1.0
 Author: Samuel Tobler
 Description: An R package for eased behavioral data preprocessing
-License: MIT Licence
+URL: https://github.com/samueltobler/behavdata
+License: cc-by-nc-sa
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
