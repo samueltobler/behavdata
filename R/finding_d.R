@@ -31,7 +31,10 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
                              low_eqbound = -d, high_eqbound = d, alpha = alpha, var.equal = var.equal, 
                              mu = 0, bias_correction = FALSE, eqbound_type = "SMD"))
     ))
-    pval[i] <- xx$TOST$p[2]
+    
+    pvalbig <- max(xx$TOST$p[2], xx$TOST$p[3])
+    
+    pval[i] <- pvalbig
     dval[i] <- d
     
     # print(xx$TOST_p1)
@@ -44,7 +47,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
       ibreak  = i
       
       d <- dval[ibreak]; p <- round(pval[ibreak],4); 
-      df <- round(xx$TOST$df[2],2); t <- round(xx$TOST$t[2], 2)
+      df <- round(xx$TOST$df[2],2); t <- round(pvalbig, 2)
       
       print(paste("The results from the equivalence test indicate that the observed effect is statistically equivalent to zero at a Cohen's value of d = ",
                   dval[i], ". (t(", df, ") = ", t, ", p = ", p, ")", sep = ""))
@@ -58,7 +61,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
                                 dval[i], ".", sep = "")) 
   }
   
-  outputlist <- list("df" = round(xx$TOST$df[2],2), "t" = round(xx$TOST$t[2], 2),
+  outputlist <- list("df" = round(xx$TOST$df[2],2), "t" = round(pvalbig, 2),
                      "p" = round(xx$TOST$p[2], 4), d = dval[i])
   #return(outputlist) 
   
