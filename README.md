@@ -15,6 +15,9 @@ The **`behavdata`** package allows easy pre-processing of behavioral data. This 
 -   `correlation_table`: to calculate all pairwise correlations of a big data set and directly obtain a CSV table
 -   `finding_d`: to determine the lowest Cohen's d value with which two group means are statistically equivalent
 -   `eta_to_d`: to calculate Cohen's d values from eta squared scores
+-   `se_propagation`: to propagate standard errors
+-   `pathback`: to go one folder up in the working directory
+-   `gse`: to determine the standard error of Hedge's g effect sizes
 
 More functions will be added over time.
 
