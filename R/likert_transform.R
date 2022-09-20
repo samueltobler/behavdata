@@ -6,9 +6,11 @@
 #' @examples
 #'
 
-likert_transform <- function(data, name = "", lang = "de", other = c("NA"), export = TRUE) {
+likert_transform <- function(data, type = "dataframe", name = "", lang = "de", other = c("NA"), export = TRUE) {
   
   require(sjmisc)
+  
+  if (type == "vector") {data <- as.data.frame(data)} else {}
   
   if (lang == "de") {
   
@@ -61,6 +63,7 @@ likert_transform <- function(data, name = "", lang = "de", other = c("NA"), expo
   }
   
   
+  
   if (export == TRUE) {
     
     if(dir.exists(file.path("CSV")) == TRUE) {} else {dir.create("CSV")}
@@ -69,7 +72,8 @@ likert_transform <- function(data, name = "", lang = "de", other = c("NA"), expo
     write.table(data, nametable, sep = ";", col.names = FALSE, row.names = FALSE)
     print("Your answers have been saved in a CSV file.") 
     
-  } else {
   }
+  
+  outputlist <- list("data" = data)
   
 }
