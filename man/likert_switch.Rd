@@ -15,6 +15,7 @@ As some items in Likert scale questionnaires are inversted, it is necessary to i
 \arguments{
 \item{data}{a data frame with individual participants in rows and different measures in columns.}
 \item{name}{name of the analysis to specify the output file.}
+\item{chr}{if the items in the data frame are characters instead of numerical entries, set chr to TRUE}
 \item{n}{number of sclae items. Default = 5.}
 \item{qoi}{Question or item of interest in a dataset with many different rows. Default = 1.}
 \item{export}{TRUE if a CSV file with the modified data should be exported, FALSE if not.}

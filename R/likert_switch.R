@@ -6,14 +6,22 @@
 #' @examples
 #'
 
-likert_switch <- function(data, name = "", n = 5, qoi = c(1), export = TRUE) {
+likert_switch <- function(data, name = "", chr = FALSE, n = 5, qoi = c(1), export = TRUE) {
+  
+  if (chr == TRUE) {
+    
+    datx <- as.data.frame(data)
+    xa <- lapply(datx, as.numeric)
+    data <- as.data.frame((as.data.frame(xa)))
+    
+  }
   
   n_run = n + 1; 
   
   for (i in 1:length(qoi)) {
     j = qoi[i]
     for (k in 1:dim(data)[1]) { 
-      data[k,j] <- 6-data[k,j]
+      data[k,j] <- n_run-data[k,j]
     }
   }
   
