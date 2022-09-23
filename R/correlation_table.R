@@ -31,4 +31,6 @@ correlation_table <- function(data, name = "") {
   namex <- paste("Tables/", name, "Correlations.csv", sep = "")
   write.table(cortable.h, namex, sep = ";")
   
+  output <- list("table" = cortable.h)
+  
 }
