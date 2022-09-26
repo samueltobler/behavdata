@@ -20,13 +20,32 @@ correlation_table <- function(data, name = "") {
       cor  =(cormat)[ut],
       p = pmat[ut]
     )
-  } # Function by sthda.com
+    
+  } # Function above by sthda.com
   
   if(dir.exists(file.path("Tables")) == TRUE) {} else {dir.create("Tables")}
   
   
   resh <- rcorr(as.matrix(data))
   cortable.h <- flattenCorrMatrix(round(resh$r,2), round(resh$P,4))
+  
+  significance <- vector()
+  
+  for (i in 1:dim(cortable.h)[1]) {
+    
+   if(cortable.h$p[i] > 0.1) {significance[i] = "ns"} else {
+     if(cortable.h$p[i] <= 0.1) {significance[i] = "."} else {
+       if(cortable.h$p[i] <= 0.05) {significance[i] = "*"} else {
+         if(cortable.h$p[i] <= 0.01) {significance[i] = "**"} else {
+           if(cortable.h$p[i] <= 0.1) {significance[i] = "***"} 
+         }
+       }
+     }
+   }
+  }
+  
+  cortable.h$significance <- significance
+  
   knitr::kable(cortable.h)
   namex <- paste("Tables/", name, "Correlations.csv", sep = "")
   write.table(cortable.h, namex, sep = ";")
