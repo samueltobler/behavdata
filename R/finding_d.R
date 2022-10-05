@@ -1,5 +1,5 @@
 finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE, 
-                       steps = 0.01, dmax = 1) {
+                       steps = 0.01, dmax = 1, eqbound = "raw") {
   
   
   quietx <- function(..., messages = FALSE, cat = FALSE) 
@@ -29,7 +29,7 @@ finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE,
     invisible(capture.output(
       xx <- quietx(tsum_TOST(m1 = m1, m2 = m2, sd1 = sd1, sd2 = sd2, n1 = n1, n2 = n2, r12 = 1, 
                              low_eqbound = -d, high_eqbound = d, alpha = alpha, var.equal = var.equal, 
-                             mu = 0, bias_correction = FALSE, eqbound_type = "SMD"))
+                             mu = 0, bias_correction = FALSE, eqbound_type = eqbound))
     ))
     
     pvalbig <- max(xx$TOST$p[2], xx$TOST$p[3])
