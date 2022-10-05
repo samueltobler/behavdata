@@ -30,5 +30,8 @@ This functions allows finding the lowest Cohen's d value at which the two groups
 finding_d(m1 = 4.4, m2 = 4.4, sd1 = 0.1, sd2 = 0.1, n1 = 25, n2 = 25)
 }
 \references{
+Tobler, S. (2022). Finding equivalence: a novel tool to investigate the effect size at which two groups are statistically equivalent. Proceedings of the 7th Annual Leraning Sciences Graduate Student Conference (LSGSC 2022). 
+
 Lakens, D. (2017). Equivalence tests: A practical primer for t-tests, correlations, and meta-analyses. Social Psychological and Personality Science, 8(4), 355-362. doi:10.1177/1948550617697177
+
 }
