@@ -3,7 +3,8 @@
 \title{Determining Cohen's d from eta squared values}
 \usage{
 r_to_d(
-  r
+  r,
+  round = 2
   )
 }
 \description{
@@ -12,6 +13,7 @@ This functions allows directly transforming r correlation values to Cohen's d va
 
 \arguments{
 \item{r}{correlation value}
+\item{round}{Rounding value for the effect size estimation}
 }
 \examples{
 r_to_d(r = 0.2)
