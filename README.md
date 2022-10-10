@@ -31,6 +31,7 @@ The **`behavdata`** package allows easy pre-processing of behavioral data. This 
 #### Other Functions
 -   `se_propagation`: to propagate standard errors
 -   `pathback`: to go one folder up in the working directory
+-   `stat.info`: to get descriptive test statistics
 
 
 More functions will be added over time.
