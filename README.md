@@ -57,6 +57,7 @@ To cite the repository **`behavdata`** in publications, please use:
 Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing and Analysis (Version 0.1.1) [Computer software]. https://github.com/samueltobler/behavdata
 
 <br>
+
 ## References
 
 Some of the functions require functions from previously published R packages. These are the references of these packages (in alphabetical order). 
