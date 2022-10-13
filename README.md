@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The **`behavdata`** package allows easy pre-processing of behavioral data. This package includes the following functions:
+The **`behavdata`** package allows easy pre-processing and analysis of behavioral data. This package includes the following functions:
 
 
 #### Scale Analysis Related
@@ -49,4 +49,4 @@ library(behavdata)
 
 To cite the repository **`behavdata`** in publications, please use:
 
-Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing (Version 0.1.0) [Computer software]. https://github.com/samueltobler/behavdata
+Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing and Analysis (Version 0.1.0) [Computer software]. https://github.com/samueltobler/behavdata

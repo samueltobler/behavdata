@@ -4,7 +4,7 @@ authors:
 - family-names: "Tobler"
   given-names: "Samuel"
   orcid: "https://orcid.org/0000-0002-0661-6055"
-title: "behavdata: R Package for Behavioral Data Preprocessing"
+title: "behavdata: R Package for Behavioral Data Preprocessing and Analysis"
 version: 0.1.0
 date-released: 2022-05-24
 url: "https://github.com/samueltobler/behavdata"
