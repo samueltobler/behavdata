@@ -2,6 +2,11 @@
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6631102.svg)](https://doi.org/10.5281/zenodo.6631102)
+
+
+
 ## Introduction
 
 The **`behavdata`** package allows easy pre-processing and analysis of behavioral data. This package includes the following functions:
@@ -49,4 +54,4 @@ library(behavdata)
 
 To cite the repository **`behavdata`** in publications, please use:
 
-Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing and Analysis (Version 0.1.0) [Computer software]. https://github.com/samueltobler/behavdata
+Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing and Analysis (Version 0.1.1) [Computer software]. https://github.com/samueltobler/behavdata

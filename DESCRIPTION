@@ -1,7 +1,7 @@
 Package: behavdata
 Type: Package
 Title: Behavioral Data Preprocessing and Analysis
-Version: 0.1.0
+Version: 0.1.1
 Author: Samuel Tobler
 Description: An R package for eased behavioral data preprocessing and analysis
 URL: https://github.com/samueltobler/behavdata
