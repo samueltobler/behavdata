@@ -64,7 +64,7 @@ Some of the functions require functions from previously published R packages. Th
 
 - `Hmisc`: Harrell Jr F (2022). Hmisc: Harrell Miscellaneous. R package version 4.7-0, https://CRAN.R-project.org/package=Hmisc.
 - `knitr`: Yihui Xie (2022). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.39.
-- `psych`: Revelle, W. (2022) psych: Procedures for Personality and Psychological Research, Northwestern University, Evanston, Illinois, USA, https://CRAN.R-project.org/package=psych (version 2.2.5).
+- `psych`: Revelle, W. (2022) psych: Procedures for Personality and Psychological Research, Northwestern University, Evanston, Illinois, USA. https://CRAN.R-project.org/package=psych 
 - `sjmisc`: Lüdecke D (2018). “sjmisc: Data and Variable Transformation Functions.” Journal of Open Source Software, 3 (26), 754. doi:10.21105/joss.00754
 - `TOSTER`: Lakens, D. (2017). Equivalence tests: A practical primer for t-tests, correlations, and meta-analyses. Social Psychological and Personality Science, 8(4), 355-362. doi:10.1177/1948550617697177
 
