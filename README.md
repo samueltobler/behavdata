@@ -58,9 +58,15 @@ Tobler, S. (2022). behavdata: R Package for Behavioral Data Preprocessing and An
 
 <br>
 
+If you used the **`finding_d`** function, please cite additionally:
+
+Tobler, S. (2022, October). Finding equivalence: a novel tool to investigate the effect size at which two groups are statistically equivalent. In 7th Annual Learning Sciences Graduate Student Conference (LSGSC 2022). https://doi.org/10.3929/ethz-b-000575508
+
+<br>
+
 ## References
 
-Some of the functions require functions from previously published R packages. These are the references of these packages (in alphabetical order). 
+Some of the functions require previously published R packages. These are the references of these packages (in alphabetical order). 
 
 - `Hmisc`: Harrell Jr F (2022). Hmisc: Harrell Miscellaneous. R package version 4.7-0, https://CRAN.R-project.org/package=Hmisc.
 - `knitr`: Yihui Xie (2022). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.39.
