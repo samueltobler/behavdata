@@ -38,6 +38,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `pathback`: to go one folder up in the working directory
 -   `stat.info`: to get descriptive test statistics
 -   `count_if`: to count how many times a certain number or element is present in the data
+-   `outliers`: to determine statistical outliers
 
 
 More functions will be added over time.
