@@ -34,13 +34,13 @@ correlation_table <- function(data, name = "") {
   for (i in 1:dim(cortable.h)[1]) {
     
    if(cortable.h$p[i] > 0.1) {significance[i] = "ns"} else {
-     if(cortable.h$p[i] <= 0.1) {significance[i] = "."} else {
-       if(cortable.h$p[i] <= 0.05) {significance[i] = "*"} else {
-         if(cortable.h$p[i] <= 0.01) {significance[i] = "**"} else {
+     if(cortable.h$p[i] <= 0.1) {significance[i] = "."} 
+      if(cortable.h$p[i] <= 0.05) {significance[i] = "*"} 
+         if(cortable.h$p[i] <= 0.01) {significance[i] = "**"} 
            if(cortable.h$p[i] <= 0.001) {significance[i] = "***"} 
-         }
-       }
-     }
+         
+       
+     
    }
   }
   
