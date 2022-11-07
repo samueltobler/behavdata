@@ -33,13 +33,17 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `finding_d`: to determine the lowest Cohen's d value with which two group means are statistically equivalent
 
 
+#### Outlier Analysis
+-   `outliers`: to determine statistical outliers
+-   `truefalsecounter`: compare two vectors to make a vector with true / false values to indicate where the values in vector 1 are present in vector 2
+
+
 #### Other Functions
 -   `se_propagation`: to propagate standard errors
 -   `pathback`: to go one folder up in the working directory
 -   `stat.info`: to get descriptive test statistics of numerical data
 -   `stat.info_chr`: to get descriptive test information of non-numerical data
 -   `count_if`: to count how many times a certain number or element is present in the data
--   `outliers`: to determine statistical outliers
 
 
 More functions will be added over time.
