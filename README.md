@@ -16,6 +16,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `likert_transform`: for fastly transform text inputs like from Likert scale answers into numerical values
 -   `likert_switch`: to invert numerical values Likert scales
 -   `AlphaCI_Bounds`: to determine the confidence interval for Cronbach's Alpha values
+-   `combined_scaleanalysis`: To quickly determine standard values for scale analyses
 
 
 #### Qualitative Data Related
