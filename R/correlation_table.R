@@ -38,9 +38,6 @@ correlation_table <- function(data, name = "") {
       if(cortable.h$p[i] <= 0.05) {significance[i] = "*"} 
          if(cortable.h$p[i] <= 0.01) {significance[i] = "**"} 
            if(cortable.h$p[i] <= 0.001) {significance[i] = "***"} 
-         
-       
-     
    }
   }
   

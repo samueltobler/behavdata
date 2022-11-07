@@ -36,7 +36,8 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 #### Other Functions
 -   `se_propagation`: to propagate standard errors
 -   `pathback`: to go one folder up in the working directory
--   `stat.info`: to get descriptive test statistics
+-   `stat.info`: to get descriptive test statistics of numerical data
+-   `stat.info_chr`: to get descriptive test information of non-numerical data
 -   `count_if`: to count how many times a certain number or element is present in the data
 -   `outliers`: to determine statistical outliers
 
