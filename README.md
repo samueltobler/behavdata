@@ -43,6 +43,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 
 #### Other Functions
 -   `se_propagation`: to propagate standard errors
+-   `ci_to_sd`: to find standard deviation values from confidence intervals
 -   `pathback`: to go one folder up in the working directory
 -   `stat.info`: to get descriptive test statistics of numerical data
 -   `stat.info_chr`: to get descriptive test information of non-numerical data
