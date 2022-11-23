@@ -1,5 +1,5 @@
-\name{eta_to_d}
-\alias{eta_to_d}
+\name{r_to_d}
+\alias{r_to_d}
 \title{Determining Cohen's d from eta squared values}
 \usage{
 r_to_d(
