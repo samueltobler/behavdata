@@ -50,6 +50,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `stat.info`: to get descriptive test statistics of numerical data
 -   `stat.info_chr`: to get descriptive test information of non-numerical data
 -   `count_if`: to count how many times a certain number or element is present in the data
+-   `p.signs`: to assign symbols to p-values
 
 
 More functions will be added over time.
