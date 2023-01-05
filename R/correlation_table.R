@@ -45,8 +45,7 @@ correlation_table <- function(data, name = "") {
   
   knitr::kable(cortable.h)
   namex <- paste("Tables/", name, "Correlations.csv", sep = "")
-  write.table(cortable.h, namex, sep = ";")
-  
-  output <- list("table" = cortable.h)
+  write.table(cortable.h, namex, sep = ";", col.names=NA)
+  return(cortable.h)
   
 }
