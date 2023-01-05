@@ -17,7 +17,5 @@ This function allows to calculating all pairwise correlations of a big data set 
 correlation_table(data = dat, name = "LearningMechanisms")
 }
 \references{
-Yihui Xie (2022). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.39.
-
 Frank E Harrell Jr (2021). Hmisc: Harrell Miscellaneous. R package version 4.6-0. https://CRAN.R-project.org/package=Hmisc
 }

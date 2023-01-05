@@ -28,6 +28,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 
 #### Correlation Analyses
 -   `correlation_table`: to calculate all pairwise correlations of a big data set and directly obtain a CSV table
+-   `single_correlation_table`: to calculate pairwise correlations of a single vector with many others and directly obtain a CSV table
 
 
 #### Effect Size Analyses
@@ -82,7 +83,6 @@ Tobler, S. (2022, October). Finding equivalence: a novel tool to investigate the
 Some of the functions require previously published R packages. These are the references of these packages (in alphabetical order). 
 
 - `Hmisc`: Harrell Jr F (2022). Hmisc: Harrell Miscellaneous. R package version 4.7-0, https://CRAN.R-project.org/package=Hmisc.
-- `knitr`: Yihui Xie (2022). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.39.
 - `psych`: Revelle, W. (2022) psych: Procedures for Personality and Psychological Research, Northwestern University, Evanston, Illinois, USA. https://CRAN.R-project.org/package=psych 
 - `sjmisc`: Lüdecke D (2018). “sjmisc: Data and Variable Transformation Functions.” Journal of Open Source Software, 3 (26), 754. doi:10.21105/joss.00754
 - `TOSTER`: Lakens, D. (2017). Equivalence tests: A practical primer for t-tests, correlations, and meta-analyses. Social Psychological and Personality Science, 8(4), 355-362. doi:10.1177/1948550617697177

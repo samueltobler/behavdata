@@ -10,8 +10,7 @@
 correlation_table <- function(data, name = "") {
   
   require(Hmisc)
-  require(knitr)
-  
+
   flattenCorrMatrix <- function(cormat, pmat) {
     ut <- upper.tri(cormat)
     data.frame(
@@ -42,8 +41,6 @@ correlation_table <- function(data, name = "") {
   }
   
   cortable.h$significance <- significance
-  
-  knitr::kable(cortable.h)
   namex <- paste("Tables/", name, "Correlations.csv", sep = "")
   write.table(cortable.h, namex, sep = ";", col.names=NA)
   return(cortable.h)
