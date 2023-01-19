@@ -1,4 +1,5 @@
 \name{p.signs}
+\alias{p.signs}
 \title{Assigning symbols to p-values}
 \usage{
 p.signs(

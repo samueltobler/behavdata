@@ -1,4 +1,5 @@
 \name{single_correlation_table}
+\alias{single_correlation_table}
 \title{Calculate all pairwise correlations of one dimensions with one or many others and directly obtain a CSV table}
 \usage{
 single_correlation_table(

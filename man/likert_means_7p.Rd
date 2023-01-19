@@ -1,4 +1,5 @@
 \name{likert_means_7p}
+\alias{likert_means_7p}
 \title{Average Likert score for 7-point Likert scales}
 \usage{
 likert_means_5p(
