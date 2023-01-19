@@ -5,7 +5,7 @@ Version: 0.1.1
 Author: Samuel Tobler
 Description: An R package for eased behavioral data preprocessing and analysis
 URL: https://github.com/samueltobler/behavdata
-License: cc-by-nc-sa
+License: CC BY-NC-SA 4.0
 Encoding: UTF-8
 LazyData: true
 Maintainer: Samuel Tobler <hi@samueltobler.ch>
