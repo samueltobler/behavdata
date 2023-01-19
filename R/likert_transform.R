@@ -4,6 +4,7 @@
 #' @keywords Likert; numerical; transformation
 #' @export
 #' @examples
+#' @import sjmisc
 #'
 
 likert_transform <- function(data, type = "dataframe", name = "", lang = "de", other = c("NA"), export = TRUE) {

@@ -1,3 +1,5 @@
+#' @import TOSTER
+
 finding_d <- function(m1, m2, sd1, sd2, n1, n2, alpha = 0.05, var.equal = FALSE, 
                        steps = 0.01, dmax = 1, eqbound = "raw") {
   

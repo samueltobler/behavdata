@@ -1,3 +1,5 @@
+#' @import Hmisc
+
 single_correlation_table <- function (MainFactor, CorrelationFactors, name = "", 
                                       mainFactorName = "") 
 {

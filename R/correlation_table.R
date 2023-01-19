@@ -4,6 +4,7 @@
 #' @keywords Correlation; Table; Transformation
 #' @export
 #' @examples
+#' @import Hmisc
 #'
 
 

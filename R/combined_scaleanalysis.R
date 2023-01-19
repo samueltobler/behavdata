@@ -1,3 +1,5 @@
+#' @import psych
+
 combined_scaleanalysis <- function(data, round = 2) {
   
   require(psych)

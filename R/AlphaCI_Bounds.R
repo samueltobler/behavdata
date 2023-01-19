@@ -4,7 +4,8 @@
 #' @keywords Alpha; Cronbach; Confidence Interval
 #' @export
 #' @examples
-#'
+#' @import psych
+#' 
 
 
 
