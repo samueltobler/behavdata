@@ -5,6 +5,7 @@
 likert_switch(
   data, 
   name,
+  chr = FALSE,
   n,
   qoi,
   export = TRUE)

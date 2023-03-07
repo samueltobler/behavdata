@@ -3,8 +3,8 @@
 \title{Determining Cohen's d from F values}
 \usage{
 f_to_d(
-  dfd,
-  dfn, 
+  dfn,
+  dfd, 
   f, 
   round = 2
   )
@@ -13,8 +13,8 @@ f_to_d(
 This functions allows directly transforming ANOVA F values to Cohen's d values. Cohen's d is calcuated using the following formula. }
 
 \arguments{
-\item{dfd}{DFd}
 \item{dfn}{Dfn}
+\item{dfd}{DFd}
 \item{f}{ANOVA F value}
 \item{round}{Rounding value for the effect size estimation}
 }

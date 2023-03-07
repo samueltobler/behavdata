@@ -18,6 +18,7 @@ This function allows to directly transform any collected data in Likert Scale fo
 \item{type}{type of entered data: either data frame (default) or vector}
 \item{name}{name of the analysis to specify the output file.}
 \item{lang}{language of the Likert scale in case either the standard 5 point Likert scales are used.}
+\item{other}{Alternative input values. See example below.}
 \item{export}{TRUE if a CSV file with the modified data should be exported, FALSE if not.}
 }
 \examples{

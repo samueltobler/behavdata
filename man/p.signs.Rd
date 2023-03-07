@@ -4,7 +4,7 @@
 \usage{
 p.signs(
   data, 
-  margins = TRUE
+  margins = TRUE,
   label.ns = TRUE
   )
 }

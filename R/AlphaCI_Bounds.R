@@ -9,11 +9,13 @@
 
 
 
-AlphaCI_Bounds <- function(fdata, round = 2) {
+AlphaCI_Bounds <- function(data, round = 2) {
   
   require(psych)
   
-  bounds <- c(round(fdata$total$raw_alpha - 1.96 * fdata$total$ase, round), 
-              round(fdata$total$raw_alpha + 1.96 * fdata$total$ase, round))
+  bounds <- c(round(data$total$raw_alpha - 1.96 * data$total$ase, round), 
+              round(data$total$raw_alpha + 1.96 * data$total$ase, round))
+  
+  return(bounds)
   
 }

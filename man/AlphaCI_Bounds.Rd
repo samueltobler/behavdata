@@ -11,10 +11,11 @@ A function to directly yield the 95 Percent Confidence Intervals for Cronbach al
 }
 \arguments{
 \item{data}{a saved 'psych::alpha' output}
-\item{name}{number of rounding digits for the confidence interval}
+\item{round}{number of rounding digits for the confidence interval}
 }
 \examples{
-AlphaCI_Bounds(data = alpha.interest, round = 2) 
+dat <- psych::alpha(data.frame(c(1:4), c(2:5), c(4:5)))
+AlphaCI_Bounds(data = dat, round = 2) 
 }
 \references{
 Revelle, W. (2021) psych: Procedures for Personality and Psychological Research, Northwestern University, Evanston, Illinois, USA, https://CRAN.R-project.org/package=psych Version = 2.1.9.

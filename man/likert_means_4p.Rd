@@ -4,7 +4,7 @@
 \usage{
 likert_means_4p(
   data,
-  weight = 2,
+  weight = 3,
   round = 2)
 }
 \description{

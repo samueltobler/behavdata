@@ -2,7 +2,7 @@
 \alias{stat.info_chr}
 \title{Descriptive statistical information of test items that are not numerical}
 \usage{
-stat.info(
+stat.info_chr(
   data, 
   round = 2, 
   export = FALSE, 

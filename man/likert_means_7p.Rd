@@ -2,7 +2,7 @@
 \alias{likert_means_7p}
 \title{Average Likert score for 7-point Likert scales}
 \usage{
-likert_means_5p(
+likert_means_7p(
   data,
   weight = 2,
   round = 2)

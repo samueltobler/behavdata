@@ -2,7 +2,7 @@
 \alias{finding_d}
 \title{Finding the effect size of equivalence}
 \usage{
-likert_transform(
+finding_d(
   m1, 
   m2, 
   sd1, 
@@ -18,9 +18,12 @@ likert_transform(
 This functions allows finding the lowest Cohen's d value at which the two groups of interest are statistically significantly equal. This function is an extension of the TOSTtwo function of the TOSTER plugin. Please cite the TOSTER plugin as indicated below. 
 }
 \arguments{
-\item{m1, m2}{Means of the two groups of interest.}
-\item{sd1, sd2}{Standard deviations of the two groups.}
-\item{n1, n2}{Sample size of the two groups.}
+\item{m1}{Mean of group 1 of interest.}
+\item{m2}{Mean of group 2 of interest.}
+\item{sd1}{Standard deviation of group 1.}
+\item{sd2}{Standard deviation of group 2.}
+\item{n1}{Sample size of group 1.}
+\item{n2}{Sample size of group 2.}
 \item{alpha}{Alpha value of significance. Default is alpha = 0.05.}
 \item{var.equal}{Equal variance of data. Default is FALSE.}
 \item{steps}{Fragmentation of Cohen's d. Smaller values lead to a more fine-grained analysis. Default steps = 0.01.}

@@ -18,7 +18,7 @@ p.signs <- function(data, margins = TRUE, label.ns = TRUE) {
   if (label.ns == FALSE) {
     for(i in 1:length(data)) {
       if(margins == TRUE) {
-        if(data[i] <= 0.1 & data[i] > 0.05){vec[i]= "†"} 
+        if(data[i] <= 0.1 & data[i] > 0.05){vec[i]= "t"} 
         if(data[i] > 0.1 ){vec[i]= ""} 
       } else {
         if(data[i] > 0.05 ){vec[i]= ""}
