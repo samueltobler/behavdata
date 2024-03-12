@@ -17,6 +17,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `likert_switch`: to invert numerical values Likert scales
 -   `AlphaCI_Bounds`: to determine the confidence interval for Cronbach's Alpha values
 -   `combined_scaleanalysis`: To quickly determine standard values for scale analyses
+-   `scales`: An extension of the function `combined_scaleanalysis`
 -   `likert_means_4p`: Average Likert score for 4-point Likert scales
 -   `likert_means_5p`: Average Likert score for 5-point Likert scales
 -   `likert_means_7p`: Average Likert score for 7-point Likert scales
