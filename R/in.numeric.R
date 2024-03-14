@@ -23,7 +23,9 @@ in.numeric <- function(data, values) {
           }
         }
       }
-      return(data.run)
+      df<- lapply(data.run,as.numeric)
+      df2 <- as.data.frame(df)
+      return(df2)
     }
   }
   
