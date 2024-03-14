@@ -13,7 +13,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 
 
 #### Scale Analysis Related
--   `likert_transform`: for fastly transform text inputs like from Likert scale answers into numerical values
+-   `likert_transform`: for fastly transforming text inputs like from Likert scale answers into numerical values
 -   `likert_switch`: to invert numerical values Likert scales
 -   `AlphaCI_Bounds`: to determine the confidence interval for Cronbach's Alpha values
 -   `combined_scaleanalysis`: To quickly determine standard values for scale analyses
@@ -21,10 +21,11 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `likert_means_4p`: Average Likert score for 4-point Likert scales
 -   `likert_means_5p`: Average Likert score for 5-point Likert scales
 -   `likert_means_7p`: Average Likert score for 7-point Likert scales
+-   `in.numeric`: for transforming data on any scale (i.e., non-numeric Likert scale) into numeric valuess
 
 
 #### Qualitative Data Related
--   `answer_rating`: for facilitated and unbiased rating of student answers on qualitative or open ended questions
+-   `answer_rating`: for facilitated and unbiased rating of student answers on qualitative or open-ended questions
 
 
 #### Correlation Analyses
@@ -33,7 +34,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 
 
 #### Effect Size Analyses
--   `eta_to_d`: to calculate Cohen's d values from eta squared scores
+-   `eta_to_d`: to calculate Cohen's d values from eta-squared scores
 -   `r_to_d`: to calculate Cohen's d values from correlation values
 -   `f_to_d`: to calculate Cohen's d values from ANOVA F scores
 -   `gse`: to determine the standard error of Hedge's g effect sizes
@@ -42,7 +43,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 
 #### Outlier Analysis
 -   `outliers`: to determine statistical outliers
--   `truefalsecounter`: compare two vectors to make a vector with true / false values to indicate where the values in vector 1 are present in vector 2
+-   `truefalsecounter`: compare two vectors to make a vector with true/false values to indicate where the values in vector 1 are present in vector 2
 
 
 #### Other Functions
