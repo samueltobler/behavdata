@@ -15,7 +15,7 @@ finding_d(
   dmax = 1)
 }
 \description{
-This functions allows finding the lowest Cohen's d value at which the two groups of interest are statistically significantly equal. This function is an extension of the TOSTtwo function of the TOSTER plugin. Please cite the TOSTER plugin as indicated below. 
+This functions allows finding the lowest Cohen's d value at which the two groups of interest are statistically significantly equal. This function is an extension of the TOSTtwo function of the TOSTER plugin. Please cite Tobler, S. (2022) and Lakens, D. (2017) (see below).}
 }
 \arguments{
 \item{m1}{Mean of group 1 of interest.}
