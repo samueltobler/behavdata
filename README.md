@@ -39,6 +39,7 @@ The **`behavdata`** package allows easy pre-processing and analysis of behaviora
 -   `f_to_d`: to calculate Cohen's d values from ANOVA F scores
 -   `gse`: to determine the standard error of Hedge's g effect sizes
 -   `finding_d`: to determine the lowest Cohen's d value with which two group means are statistically equivalent
+-   `finding_d_from_df`: to determine the lowest Cohen's d value with which two group means are statistically equivalent from a data frame
 
 
 #### Outlier Analysis
