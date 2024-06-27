@@ -16,6 +16,6 @@ finding_d_from_df <- function(group, value,
                        sd1 = sd[1], sd2 = sd[2], 
                        n1 = n[1], n2 = n[2], 
                        alpha = alpha, var.equal = var.equal, 
-                       steps = steps)
+                       steps = steps, dmax = dmax)
   
 }
